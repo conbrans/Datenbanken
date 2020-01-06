@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS Adresse;
+CREATE TABLE IF NOT EXISTS Adresse
+(
+    AdresseID INT(5) AUTO_INCREMENT,
+    Straße Varchar(255) NOT NULL,
+    Hausnummer VARCHAR(4),
+    Zusatz VARCHAR(255),
+    PLZ INT(5) NOT NULL,
+    Ort VARCHAR(255) NOT NULL,
+    SSN CHAR(9),
+
+    PRIMARY KEY (AdresseID),
+
+    CONSTRAINT ADRESSESSN
+        FOREIGN KEY (SSN) REFERENCES Mitarbeiter(SSN)
+            ON DELETE SET NULL
+            ON UPDATE CASCADE
+);
+
+
