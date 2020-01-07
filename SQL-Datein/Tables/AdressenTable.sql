@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS Adresse
     Zusatz VARCHAR(255),
     PLZ INT(5) NOT NULL,
 
+
     PRIMARY KEY (AdresseID)
 );
 

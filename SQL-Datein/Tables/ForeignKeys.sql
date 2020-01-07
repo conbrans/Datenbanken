@@ -22,6 +22,7 @@ ALTER TABLE Mitarbeiter
         ON DELETE SET NULL
         ON UPDATE CASCADE;
 
+
 ALTER TABLE Notruf
     ADD CONSTRAINT NotrufEreignis FOREIGN KEY (EreignisID) REFERENCES Ereignis(EreignisID)
         ON DELETE RESTRICT
