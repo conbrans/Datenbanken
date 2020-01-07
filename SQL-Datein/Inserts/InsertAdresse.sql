@@ -1,7 +1,7 @@
 USE Meldezentrale;
-INSERT INTO Adresse(Straße, Hausnummer,  PLZ) VALUE ('Zufallsstraße','24',49809);
-INSERT INTO Adresse(Straße, Hausnummer, Zusatz, PLZ ) VALUE ('Randomstraße','25','A',49809);
-INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Kirchstraße','666',49809);
+INSERT INTO Adresse(Straße, Hausnummer,  PLZ) VALUE ('Zufallsstraße','24',49186);
+INSERT INTO Adresse(Straße, Hausnummer, Zusatz, PLZ ) VALUE ('Randomstraße','25','A',49744);
+INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Kirchstraße','666',49844);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Kaiserstraße','10',49808);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Brunnenstraße','1',49808);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Ehemaligenstraße','1',49808);
