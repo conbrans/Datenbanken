@@ -1,5 +1,6 @@
-DROP TABLE Anrufer;
-CREATE TABLE Anrufer
+USE Meldezentrale;
+DROP TABLE IF EXISTS Anrufer;
+CREATE TABLE IF NOT EXISTS Anrufer
 (
     AnruferID Int(5) Auto_Increment,
     NName VARCHAR(255),

@@ -11,9 +11,11 @@ ALTER TABLE Einsatz
         ON UPDATE CASCADE;
 
 ALTER TABLE Einsatz
-    ADD CONSTRAINT EinsatzDienst FOREIGN KEY(DienstID) REFERENCES Dienste(DiensteID)
+    ADD CONSTRAINT EinsatzRessourcen FOREIGN KEY (Ressourcen) REFERENCES Ressourcen(RessourcenID)
         ON DELETE SET NULL
         ON UPDATE CASCADE;
+
+
 
 ALTER TABLE Mitarbeiter
     ADD CONSTRAINT MitarbeiterAdresse FOREIGN KEY(AdressID) REFERENCES Adresse(AdresseID)
@@ -22,7 +24,7 @@ ALTER TABLE Mitarbeiter
 
 ALTER TABLE Notruf
     ADD CONSTRAINT NotrufEreignis FOREIGN KEY (EreignisID) REFERENCES Ereignis(EreignisID)
-        ON DELETE SET NULL
+        ON DELETE RESTRICT
         ON UPDATE CASCADE;
 
 ALTER TABLE Notruf
@@ -32,8 +34,10 @@ ALTER TABLE Notruf
 
 ALTER TABLE Notruf
     ADD CONSTRAINT NotrufAnrufer FOREIGN KEY (AnruferID) REFERENCES Anrufer(AnruferID)
-        ON DELETE SET NULL
+        ON DELETE RESTRICT
         ON UPDATE CASCADE;
+
+
 
 
 
