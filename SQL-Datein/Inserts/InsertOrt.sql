@@ -1,0 +1,6 @@
+USE Meldezentrale;
+INSERT INTO Orte VALUE(49809,'Lingen');
+INSERT INTO Orte VALUE(49808,'Lingen');
+INSERT INTO Orte VALUE(49744,'Geeste');
+INSERT INTO Orte VALUE(49844,'Bawinkel');
+

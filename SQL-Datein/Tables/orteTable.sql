@@ -1,0 +1,9 @@
+USE Meldezentrale;
+DROP TABLE IF EXISTS Orte;
+CREATE TABLE Orte
+(
+    PLZ INT(5),
+    Ort VARCHAR(255),
+
+    PRIMARY KEY (PLZ)
+);

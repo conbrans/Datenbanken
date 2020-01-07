@@ -1,3 +1,4 @@
+USE Meldezentrale;
 DROP TABLE IF EXISTS Dienste;
 CREATE TABLE IF NOT EXISTS Dienste
 (
