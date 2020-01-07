@@ -1,0 +1,32 @@
+USE Meldezentrale;
+
+ALTER TABLE Adresse
+    ADD CONSTRAINT AdressePLZORT FOREIGN KEY(PLZ) REFERENCES Orte(PLZ)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE;
+
+ALTER TABLE Einsatz
+    ADD CONSTRAINT EinsatzNotruf FOREIGN KEY (NotrufID) REFERENCES Notruf(NotrufID)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE;
+
+ALTER TABLE Einsatz
+    ADD CONSTRAINT EinsatzDienst FOREIGN KEY(DienstID) REFERENCES Dienste(DiensteID)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE;
+
+ALTER TABLE Mitarbeiter
+    ADD CONSTRAINT MitarbeiterAdresse FOREIGN KEY(AdressID) REFERENCES Adresse(AdresseID)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE;
+
+ALTER TABLE Notruf
+    ADD CONSTRAINT NotrufEreignis FOREIGN KEY (EreignisID) REFERENCES Ereignis(EreignisID)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE;
+
+ALTER TABLE Notruf
+    ADD CONSTRAINT NotrufAdresse FOREIGN KEY (AdressID) REFERENCES Adresse(AdresseID)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE;
+
