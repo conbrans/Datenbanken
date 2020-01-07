@@ -30,3 +30,10 @@ ALTER TABLE Notruf
         ON DELETE RESTRICT
         ON UPDATE CASCADE;
 
+ALTER TABLE Notruf
+    ADD CONSTRAINT NotrufAnrufer FOREIGN KEY (AnruferID) REFERENCES Anrufer(AnruferID)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE;
+
+
+
