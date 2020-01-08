@@ -6,13 +6,14 @@ INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Kaiserstraße','10',49808)
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Brunnenstraße','1',49808);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Ehemaligenstraße','1',49808);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Ehemaligenstraße','2',49808);
-
-
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Reckfeldstraße' ,'66',49809);
 INSERT INTO Adresse(Straße, Hausnummer, PLZ) VALUE ('Groß Below' ,'15',49744);
 INSERT INTO Adresse(Straße, Hausnummer,  PLZ) VALUE ('An St. Georg' ,'70',49744);
 INSERT INTO Adresse(Straße, Hausnummer,  PLZ) VALUE ('An St. Georg' ,'70',49744);
 INSERT INTO Adresse(Straße, Hausnummer,  PLZ) VALUE ('Am Scholitzer Acker','40',49809);
 INSERT INTO Adresse(Straße,  PLZ) VALUE ('Godehardistraße',49809);
-
+INSERT INTO Adresse (Straße,Hausnummer ,PLZ) values ('Pestalozzistrasse','161',49844),
+                                                    ('Hölderlinstrasse','53',49744),
+                                                    ('Tannenstrasse', '12c',49186),
+                                                    ('Kastanienweg', '165',49809);
 
